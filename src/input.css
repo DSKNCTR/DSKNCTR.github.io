@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --bgcolor: #222222;
+    --pcolor: #808080;
+}
+
+body{
+    background-color: var(--bgcolor);
+    color: var(--pcolor);
+}
+
+*{
+    font-family: 'Questrial', 'sans-serif';
+}
+
+.tracking-widest{
+    letter-spacing: 0.35em;
+}
+
+.parent .child{
+    visibility: hidden;
+}
+.parent:hover .child{
+    visibility: visible;
+}
+.parent:active .child{
+    visibility: visible;
+}

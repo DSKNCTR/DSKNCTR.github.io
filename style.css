@@ -1,0 +1,48 @@
+:root{
+    --bgcolor: #222222;
+    --pcolor: #808080;
+}
+
+*{
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 0.35rem;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
+
+.navflex{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.navflex ul li{
+    display: inline;
+    float: center;
+    margin: 1rem 2rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--pcolor);
+}
+.hide{
+    visibility: hidden;
+}
+#link:hover + .hide{
+    visibility: visible;
+}
+
+.flex{
+    display: flex;
+}
