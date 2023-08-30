@@ -4,45 +4,65 @@
 }
 
 *{
-    font-family: 'Questrial', sans-serif;
-    letter-spacing: 0.35rem;
+    font-family: 'Questrial', 'Work Sans', sans-serif;
+    color: #808080;
+    letter-spacing: 0.5rem;
+    cursor:url(/main/cursor1.svg), auto;
 }
 
 body{
     background-color: var(--bgcolor);
 }
 
-.navbar{
-    overflow: hidden;
+.flex{
+    display: flex;
+    width: 100%;
+}
+.w100{
+    width: 100%;
+}
+
+.text-sm{
+    font-size: small;
+}
+
+.text-lg{
+    font-size: large;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.bottom{
     position: fixed;
-    bottom: 0;
-    width: 80%;
+    bottom: 2rem;
+}
+
+.mx-2{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.mt-2{
+    margin-top: 15rem;
+}
+
+.navlink{
+    cursor: none;
+    transition: 200ms ease-in-out;
+    padding: 0.5rem 1rem;
 }
 
 .navflex{
     display: flex;
-    margin: 20px auto;
-    justify-content: center;
 }
 
-.navflex ul li{
-    display: inline;
-    float: center;
-    margin: 1rem 2rem;
+#slash:hover{
+    background-color: var(--pcolor);
+    color: var(--bgcolor);
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    font-size: 0.7rem;
-    color: var(--pcolor);
-}
-.hide{
-    visibility: hidden;
-}
-#link:hover + .hide{
-    visibility: visible;
-}
-
-.flex{
-    display: flex;
+.middle{
+    align-items: center;
+    transform: translate(0, 150%);
 }
