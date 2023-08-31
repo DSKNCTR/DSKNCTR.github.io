@@ -9,3 +9,6 @@
 // function Cursor2(){
 //     document.body.style.cursor="url('cursor2.svg'), default";
 // }
+function off() {
+  document.getElementById("proverlay").style.display = "none"
+}
