@@ -46,11 +46,10 @@ main{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    padding-top: 20vh;
     margin: auto;
     z-index: 10;
-    grid-template-columns: 100vw 100vw 100vw;
-    max-width: 100vw;
+    grid-template-columns: 100vw 100vw 100vw 100vw;
+    min-width: 100vw;
     letter-spacing: 0.3rem;
 }
 
@@ -61,6 +60,7 @@ main{
     text-align: center;
     align-items: center;
     min-width: max-content;
+    padding-top: 20vh;
 }
 
 .log{
@@ -72,6 +72,7 @@ main{
     font-size: large;
     letter-spacing: 0.3rem;
 }
+
 .about > h2{
     font-size: small;
     text-transform: uppercase;
@@ -80,8 +81,55 @@ main{
 
 .about > p{
     margin-top: 1.75rem;
+    line-height: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: max-content;
+    padding-top: 10vh;
+}
+.work > h1{
+    font-size: large;
+    letter-spacing: 0.3rem;
+}
+
+.img_grid{
+    display: grid;
+    margin-top: 2rem;
+    gap: 1rem;
+    grid-template-columns: 20vw 20vw 20vw;
+}
+
+.img_grid > span{
+    background-color: grey;
+    height: 20vh;
+}
+
+.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: max-content;
+    padding-top: 20vh;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: max-content;
+    padding-top: 20vh;
 }
 
 .logos{
@@ -99,6 +147,7 @@ main{
 
 .cards > *{
     font-size: small;
+    letter-spacing: 0.3rem;
 }
 
 footer{
@@ -115,6 +164,7 @@ footer > * > a{
     padding: 0 0.4rem;
     text-decoration: none;
     color: hsl(0, 0%, 50%);
+    letter-spacing: 0.3rem;
 }
 
 footer > * > a:hover{
