@@ -32,34 +32,66 @@
 body{
     color: hsl(0, 0%, 50%);
     background: hsl(0, 0%, 13%);
+    font-weight: 600;
+    background-image: url("./main/bg_logo.png");
+    background-attachment: fixed;
 }
 
-.main{
+main{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin: auto;
+    z-index: 10;
+    grid-template-columns: 100vw 100vw 100vw;
+    max-width: 100vw;
+}
+
+.about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
     text-align: center;
-    min-height: 90vh;
+    align-items: center;
+    min-width: max-content;
 }
 
-.main > img{
-    align-self: center;
-    margin-bottom: 2rem;
+.log{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.75rem;
+}
+.about > h1{
+    font-size: large;
+}
+.about > h2{
+    font-size: small;
+    text-transform: uppercase;
 }
 
-.main_container{
-    justify-content: space-around;
-    margin: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 90vh 10%;
+.about > p{
+    margin-top: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.logos{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 1.75rem;
+    font-size: x-small;
+    line-height: 1rem;
+}
+
+.cards{
+    padding: 0 0.75rem;
 }
 
 footer{
     display: flex;
+    position: fixed;
+    bottom: 2.75rem;
     width: 100vw;
     justify-content: space-around;
     font-weight: 600;
@@ -83,8 +115,15 @@ footer > * > a:hover{
     padding-bottom: 0.2rem;
 }
 
-.pos{
+.desg{
     font-size: small;
     text-transform: uppercase;
     font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.para{
+    margin-top: 1.75rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
 }
