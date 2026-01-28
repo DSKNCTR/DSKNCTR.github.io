@@ -50,7 +50,7 @@ import { DetailsComponent } from "./DetailsProp"
 
 // `;
 
-export const ProfilePage = () => {
+const ProfilePage = () => {
   const startYear = Number(import.meta.env.VITE_EXP_YEAR) || 2023;
   const startMonth = Number(import.meta.env.VITE_EXP_MONTH) || 2026;
 
@@ -78,3 +78,5 @@ export const ProfilePage = () => {
     </div>
   );
 };
+
+export default ProfilePage;

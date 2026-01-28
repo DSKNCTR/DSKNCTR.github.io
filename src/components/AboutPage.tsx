@@ -1,4 +1,4 @@
-export const AboutPage = () => {
+const AboutPage = () => {
     const startYear = Number(import.meta.env.VITE_EXP_YEAR) || 2023;
     const expYears = new Date().getFullYear() - startYear - 1;
     console.log('Experience Years:', expYears);
@@ -8,3 +8,5 @@ export const AboutPage = () => {
     </div>
   )
 }
+
+export default AboutPage;
