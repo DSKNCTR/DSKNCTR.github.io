@@ -1,7 +1,5 @@
-const ExperiencePage = () => {
+export const ExperiencePage = () => {
   return (
     <div>ExperiencePage</div>
   )
 }
-
-export default ExperiencePage;
